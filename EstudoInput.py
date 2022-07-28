@@ -27,7 +27,7 @@ nome4 = input('Escreva um nome masc: ')
 adj = input ('Escolha um adjetivo ruim: ')
 
 
-
+print (' ')
 print ( 'Era uma vez uma pessoa chamada ' + nome1 + '. Ela tinha muitos sonhos e queria se mudar para ' + lugar + '.')
 print ('Porém, para alcançar seus objetivos, ela precisaria de ajuda, pois era muito pobre e não sabia por onde começar. Foi aí que conheceu ')
 print (nome2 + ', um garoto que possuia muitos sonhos também, porém, estava tão perdido quanto ela.')

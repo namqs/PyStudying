@@ -1,5 +1,6 @@
 import pyautogui
 import time
+#é so trocar todos os time sleep por #pyautogui.PAUSE = 5
 
 pyautogui.press('win')
 time.sleep(5)

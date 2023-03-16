@@ -17,6 +17,20 @@ pyautogui.click(x=717, y=460)
 pyautogui.write('senha123')
 pyautogui.click(x=693, y=515)
 
+#Passo 3: 
+pyautogui.click(x=432, y=364) #clica no doc
+pyautogui.click(x=1160, y=183) #clica nos 3 pontinhos
+pyautogui.click(x=932, y=632) #faz o download
+
+#Passo 4:
+import pandas as pd
+
+tabela = pd.read_csv(r"C://home/natalie/Downloads/Compras.csv", sep=";")
+print(tabela)
+totalgasto = tabela["ValorFinal"].sum()
+quantidade = tabela["Quantidade"].sum()
+precoMedio = totalgasto / quantidade
+
 #como fzr as coordenada do mouse:
 #time.sleep(5)
 #print(pyautogui.position())

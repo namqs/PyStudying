@@ -31,6 +31,33 @@ totalgasto = tabela["ValorFinal"].sum()
 quantidade = tabela["Quantidade"].sum()
 precoMedio = totalgasto / quantidade
 
+#Passo 5 e ultimo:
+pyautogui.hotkey('ctrl', 't')
+pyautogui.click(x=1162, y=166)
+time.sleep(10)
+pyautogui.click(x=120, y=206)
+pyautogui.write('j')
+time.sleep(4)
+pyautogui.press('enter')
+pyautogui.click(x=860, y=389)
+pyautogui.write('Correio da programadora mais linda')
+pyautogui.click(x=922, y=443)
+pyperclip.copy('Relatório de vendas')
+pyautogui.hotkey('ctrl', 'v')
+texto = f''' 
+Prezado,
+Segue o relatório de compras
+Total gasto: R$ {totalgasto:,.2f}
+Quantidade de Produtos: {quantidade:,}
+Preço médio: R$ {precoMedio:,.2f}
+
+Qualquer dúvida, me manda um zap.
+Att., Natalie Marques.
+'''
+pyperclip.copy(texto)
+pyautogui.hotkey('ctrl', 'v')
+pyautogui.hotkey('ctrl', 'enter')
+
 #como fzr as coordenada do mouse:
 #time.sleep(5)
 #print(pyautogui.position())
